@@ -1,12 +1,8 @@
-(() => {
+isClipSupport = () => {
     let div = document.createElement('div');
     div.style.cssText = 'clip-path: circle(0 at right 2rem top 1.24rem)';
-    if (div.style.length) {
-        console.log('support!');
-    } else {
-        alert('not support!');
-    }
-})();
+    return div.style.length
+};
 (() => {
     let main = () => {
         let pageNum = 0,
@@ -54,6 +50,9 @@
                 case '5':
                     movePage(index);
             }
+        };
+        if (!isClipSupport()) {
+            menuElm.classList.add('clip-not-support');
         };
         menuElm.querySelectorAll('li a>div').forEach((e, index) => e.addEventListener('click', e => {
             movePage(index);

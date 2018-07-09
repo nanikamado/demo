@@ -17,6 +17,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: Palatino-Roman, 游明朝体, "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", serif;
+  perspective: 1000px;
 }
 
 .page {
@@ -276,6 +277,13 @@ footer div {
   }
   :not(.not) .menu:not(.not) {
     right: 0;
+  }
+  :not(.not) .menu.clip-not-support {
+    transform: rotateY(90deg);
+    transform-origin: 100% 50%;
+  }
+  :not(.not) .menu.clip-not-support.active {
+    transform: rotateY(0deg);
   }
   :not(.not) .menu.active {
     clip-path: circle(100vmax at right 2rem top 2rem);
