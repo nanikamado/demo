@@ -228,12 +228,21 @@ h1 {
             }
         }
     }
+    &.clip-not-support {
+        transform: rotateY(90deg);
+    }
 }
 
 footer {
     background-color: #000;
     div {
         text-align: center;
+    }
+}
+
+@media (min-width: 35rem) {
+    .menu:not(.not) {
+        transform: rotateY(0deg);
     }
 }
 
