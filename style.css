@@ -96,7 +96,6 @@ h1 {
 .top {
   display: none;
   background-image: url(./img/top5.jpg);
-  color: red;
 }
 
 .top > div:not(.not):not(.not) {
@@ -282,6 +281,9 @@ footer div {
   :not(.not) .menu.clip-not-support {
     transform: rotateY(90deg);
     transform-origin: 100% 50%;
+  }
+  :not(.not) .menu.clip-not-support.active {
+    transform: rotateY(0deg);
   }
   :not(.not) .menu.active {
     clip-path: circle(100vmax at right 2rem top 2rem);
