@@ -264,7 +264,7 @@ footer div {
     transition: all .5s 0s ease;
   }
   :not(.not) .descript {
-    width: calc(100% - 2rem);
+    width: calc(100% - 4rem);
   }
   :not(.not) .menu {
     display: block;
@@ -281,9 +281,6 @@ footer div {
   :not(.not) .menu.clip-not-support {
     transform: rotateY(90deg);
     transform-origin: 100% 50%;
-  }
-  :not(.not) .menu.clip-not-support.active {
-    transform: rotateY(0deg);
   }
   :not(.not) .menu.active {
     clip-path: circle(100vmax at right 2rem top 2rem);

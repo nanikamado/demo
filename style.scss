@@ -247,7 +247,7 @@ footer {
             transition: all .5s 0s ease;
         }
         .descript {
-            width: calc(100% - 2rem);
+            width: calc(100% - 4rem);
         }
         .menu {
             &:not(.not) {
@@ -264,7 +264,7 @@ footer {
                 transform: rotateY(90deg);
                 transform-origin: 100% 50%;
                 &.active {
-                    transform: rotateY(0deg);
+                    //transform: rotateY(0deg);
                 }
             }
             &.active {
