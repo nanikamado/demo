@@ -228,9 +228,6 @@ h1 {
             }
         }
     }
-    &.clip-not-support {
-        transform: rotateY(90deg);
-    }
 }
 
 footer {
@@ -240,13 +237,7 @@ footer {
     }
 }
 
-@media (min-width: 35rem) {
-    .menu:not(.not) {
-        transform: rotateY(0deg);
-    }
-}
-
-@media (max-width: 35rem) {
+@media (max-width: 500px) {
      :not(.not) {
         h1 {
             left: auto;

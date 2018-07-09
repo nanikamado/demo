@@ -247,10 +247,6 @@ h1 {
   background-size: cover;
 }
 
-.menu.clip-not-support {
-  transform: rotateY(90deg);
-}
-
 footer {
   background-color: #000;
 }
@@ -259,13 +255,7 @@ footer div {
   text-align: center;
 }
 
-@media (min-width: 35rem) {
-  .menu:not(.not) {
-    transform: rotateY(0deg);
-  }
-}
-
-@media (max-width: 35rem) {
+@media (max-width: 500px) {
   :not(.not) h1 {
     left: auto;
     right: 3rem;
