@@ -1,9 +1,9 @@
-isClipSupport = () => {
-    let div = document.createElement('div');
-    div.style.cssText = 'clip-path: circle(0 at right 2rem top 1.24rem)';
-    return div.style.length
-};
 (() => {
+    let isClipSupport = () => {
+        let div = document.createElement('div');
+        div.style.cssText = 'clip-path: circle(0 at right 2rem top 1.24rem)';
+        return div.style.length
+    };
     let main = () => {
         let pageNum = 0,
             buttonAct = !1;
