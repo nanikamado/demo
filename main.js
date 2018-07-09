@@ -51,8 +51,8 @@
                     movePage(index);
             }
         };
-        if (!isClipSupport()) {
-            menuElm.classList.add('clip-not-support');
+        if (isClipSupport()) {
+            menuElm.classList.remove('clip-not-support');
         };
         menuElm.querySelectorAll('li a>div').forEach((e, index) => e.addEventListener('click', e => {
             movePage(index);

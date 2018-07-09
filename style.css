@@ -264,7 +264,7 @@ footer div {
     transition: all .5s 0s ease;
   }
   :not(.not) .descript {
-    width: auto;
+    width: calc(100% - 2rem);
   }
   :not(.not) .menu {
     display: block;

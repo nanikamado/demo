@@ -247,7 +247,7 @@ footer {
             transition: all .5s 0s ease;
         }
         .descript {
-            width: auto;
+            width: calc(100% - 2rem);
         }
         .menu {
             &:not(.not) {
