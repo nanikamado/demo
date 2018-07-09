@@ -1,3 +1,9 @@
+try {
+    Function("a => 1")
+} catch (e) {
+    alert('お使いのブラウザではサイトを正しく表示することができません。最新のChrome, Firefox, Edge, Safari をお使いください。')
+}
+
 (() => {
     let isClipSupport = () => {
         let div = document.createElement('div');
