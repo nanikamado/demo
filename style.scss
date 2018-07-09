@@ -95,6 +95,7 @@ h1 {
 .top {
     display: none;
     background-image: $img1;
+    color: red;
     &>div:not(.not):not(.not) {
         transition: all 1.3s 0s ease;
         opacity: 0;

@@ -96,6 +96,7 @@ h1 {
 .top {
   display: none;
   background-image: url(./img/top5.jpg);
+  color: red;
 }
 
 .top > div:not(.not):not(.not) {
