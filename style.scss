@@ -37,7 +37,7 @@ h1 {
     color: #001635;
     font-weight: normal;
     position: absolute;
-    right: 3rem;
+    left: 3rem;
     font-size: 5rem;
 }
 
@@ -175,6 +175,7 @@ h1 {
         height: 3rem;
         line-height: 3rem;
         vertical-align: middle;
+        list-style: none;
         &:hover {
             background-color: transparent;
         }
@@ -205,6 +206,9 @@ h1 {
             color: #fff;
             font-weight: bold;
             padding: 0;
+            width: 100%;
+            left: 0;
+            position: absolute;
             &>div {
                 &::after {
                     height: 3rem;
@@ -234,6 +238,10 @@ footer {
 
 @media (max-width: 35rem) {
      :not(.not) {
+        h1 {
+            left: auto;
+            right: 3rem;
+        }
         &:not(.not) body * {
             transition: all .5s 0s ease;
         }
