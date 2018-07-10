@@ -26,8 +26,7 @@ body {
 }
 
 .page {
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,6 +44,26 @@ h1 {
 .cont {
     position: relative;
     &>div {
+        &:nth-child(1) {
+            h2 {
+                font-size: 3rem;
+                margin-top: 0;
+                padding-top: 2rem;
+            }
+            p {
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .e1 {
+                font-size: 1.3rem;
+                margin: auto 2rem;
+            }
+            .e2 {
+                margin: 3rem 1rem 1rem;
+                font-size: .9rem;
+            }
+        }
         &:nth-of-type(3) h2,
         &:nth-of-type(5) h2 {
             color: #000;
@@ -69,8 +88,9 @@ h1 {
         }
     }
     h2 {
-        margin-left: 3rem;
-        margin-top: 1rem;
+        margin-left: 10%;
+        margin-top: 0;
+        padding-top: 1rem;
     }
     iframe {
         border: 0;
@@ -111,13 +131,6 @@ h1 {
         &~.menu {
             right: 3rem;
         }
-    }
-}
-
-.top-cont {
-    h2 {
-        font-size: 3rem;
-        margin-top: 4rem;
     }
 }
 

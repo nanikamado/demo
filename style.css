@@ -21,8 +21,7 @@ body {
 }
 
 .page {
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +38,28 @@ h1 {
 
 .cont {
   position: relative;
+}
+
+.cont > div:nth-child(1) h2 {
+  font-size: 3rem;
+  margin-top: 0;
+  padding-top: 2rem;
+}
+
+.cont > div:nth-child(1) p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cont > div:nth-child(1) .e1 {
+  font-size: 1.3rem;
+  margin: auto 2rem;
+}
+
+.cont > div:nth-child(1) .e2 {
+  margin: 3rem 1rem 1rem;
+  font-size: .9rem;
 }
 
 .cont > div:nth-of-type(3) h2,
@@ -71,8 +92,9 @@ h1 {
 }
 
 .cont h2 {
-  margin-left: 3rem;
-  margin-top: 1rem;
+  margin-left: 10%;
+  margin-top: 0;
+  padding-top: 1rem;
 }
 
 .cont iframe {
@@ -114,11 +136,6 @@ h1 {
 
 .top.showed ~ .menu {
   right: 3rem;
-}
-
-.top-cont h2 {
-  font-size: 3rem;
-  margin-top: 4rem;
 }
 
 .headline {
