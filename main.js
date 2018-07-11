@@ -5,6 +5,9 @@ try {
 }
 
 (() => {
+    const $$ = t => document.querySelectorAll(t),
+        $ = t => document.querySelector(t);
+
     let isClipSupport = () => {
         let div = document.createElement('div');
         div.style.cssText = 'clip-path: circle(0 at right 2rem top 1.24rem)';
@@ -13,11 +16,11 @@ try {
     let main = () => {
         let pageNum = 0,
             buttonAct = !1;
-        const $ = t => document.querySelectorAll(t),
-            contents = $('.cont>div'),
-            menuElm = $('.menu')[0],
-            topElm = $('.top.page')[0],
-            buttonElm = $('.button')[0],
+
+        const contents = $$('.cont>div'),
+            menuElm = $('.menu'),
+            topElm = $('.top.page'),
+            buttonElm = $('.button'),
             menuLists = menuElm.querySelectorAll('li'),
             movePage = index => {
                 if (index === pageNum) {
@@ -64,7 +67,7 @@ try {
             movePage(index);
             e.preventDefault();
         }));
-        $('.button')[0].addEventListener('click', () => {
+        $$('.button')[0].addEventListener('click', () => {
             if (buttonAct) {
                 menuElm.classList.remove('active');
                 buttonAct = !1;
@@ -74,7 +77,9 @@ try {
                 buttonAct = !0;
             }
         });
-        setTimeout(() => topElm.classList.add('showed'), 2000);
     };
     document.addEventListener("DOMContentLoaded", main);
+    window.addEventListener('load', () => {
+        $('.top.page').classList.add('showed');
+    });
 })();
