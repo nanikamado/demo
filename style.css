@@ -42,6 +42,21 @@ h1 {
   font-size: 5rem;
 }
 
+h2::before {
+  transition: all 1.3s 0s ease;
+  position: absolute;
+  content: "";
+  width: 0%;
+  left: 0;
+  top: 2.1em;
+  background-color: #fff;
+  height: 1px;
+}
+
+h2.showed::before {
+  width: 100%;
+}
+
 .cont {
   position: relative;
 }
